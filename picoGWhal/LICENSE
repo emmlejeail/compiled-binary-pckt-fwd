@@ -1,4 +1,4 @@
-Copyright (C) 2013, SEMTECH S.A.
+Copyright (c) 2013, SEMTECH S.A.
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
@@ -24,10 +24,10 @@ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 
---- For the parson library ---
+--- For the parson library used by the packet logger ---
 
 Parson ( http://kgabis.github.com/parson/ )
-Copyright (C) 2012 Krzysztof Gabis
+Copyright (c) 2012 Krzysztof Gabis
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

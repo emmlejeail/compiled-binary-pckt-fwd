@@ -6,11 +6,11 @@ include library.cfg
 ### constant symbols
 
 ARCH ?=
-CROSS_COMPILE ?=
+CROSS_COMPILE ?= mips-openwrt-linux-musl-
 CC := $(CROSS_COMPILE)gcc
 AR := $(CROSS_COMPILE)ar
 
-CFLAGS := -O2 -Wall -Wextra -std=c99 -Iinc -I.
+CFLAGS := -O2 -Wall -Wextra -std=gnu99 -Iinc -I.
 
 OBJDIR = obj
 INCLUDES = $(wildcard inc/*.h)

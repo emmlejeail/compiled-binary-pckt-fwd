@@ -6,7 +6,7 @@ APP_NAME := lora_pkt_fwd
 
 LGW_PATH ?= ../../lora_gateway/libloragw
 ARCH ?=
-CROSS_COMPILE ?=
+CROSS_COMPILE ?= mips-openwrt-linux-musl-
 
 OBJDIR = obj
 INCLUDES = $(wildcard inc/*.h)
@@ -22,8 +22,9 @@ RELEASE_VERSION := `cat ../VERSION`
 CC := $(CROSS_COMPILE)gcc
 AR := $(CROSS_COMPILE)ar
 
-CFLAGS := -O2 -Wall -Wextra -std=c99 -Iinc -I.
+CFLAGS := -O2 -Wall -Wextra -std=gnu99 -Iinc -I.
 VFLAG := -D VERSION_STRING="\"$(RELEASE_VERSION)\""
+CDEFS := -DNO_QSORT_R
 
 ### Constants for Lora concentrator HAL library
 # List the library sub-modules that are used by the application

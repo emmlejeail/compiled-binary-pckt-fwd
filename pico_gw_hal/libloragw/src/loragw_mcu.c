@@ -36,6 +36,8 @@ License: Revised BSD License, see LICENSE.TXT file include in the project
 /* -------------------------------------------------------------------------- */
 /* --- PRIVATE MACROS ------------------------------------------------------- */
 
+#define DEBUG_MCU 1
+
 #if DEBUG_MCU == 1
 #define DEBUG_MSG(str)                fprintf(stderr, str)
 #define DEBUG_PRINTF(fmt, args...)    fprintf(stderr,"%s:%d: "fmt, __FUNCTION__, __LINE__, args)
